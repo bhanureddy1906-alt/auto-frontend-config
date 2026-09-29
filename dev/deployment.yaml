@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auto-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: auto-frontend
+  template:
+    metadata:
+      labels:
+        app: auto-frontend
+    spec:
+      containers:
+        - name: auto-frontend
+          image: bhanureddy1906/auto-frontend:initial
+          ports:
+            - containerPort: 80
