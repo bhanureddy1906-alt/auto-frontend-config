@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: auto-frontend
-          image: bhanureddy1906/auto-frontend:efbbf0d337c37a4a76e41790a31f14c3486219a4
+          image: bhanureddy1906/auto-frontend:c41008774fe060ddfa586748bd29980b291d93cf
           ports:
             - containerPort: 80
